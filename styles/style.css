@@ -101,16 +101,26 @@ a {
   left: 50%;
 }
 .ba-radio__item {
-  width: 19px;
-  height: 19px;
-  margin-right: 17px;
-  cursor: pointer;  
+  display: none;
 }
-.ba-radio__item:last-child {
+
+.ba-radio__icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: #fff;
+  box-shadow: 0 0 0 .1em #4a90e2;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 17px;
+  transition: .3s;
+}
+.ba-radio__icon:last-child {
   margin-right: 0;
 }
-.ba-image__item {
-  align-self: flex-end;
+.ba-radio__icon:hover {
+  background-color: rgb(173, 169, 169);
+  box-shadow: 0 0 0 .1em #e24a6b;
 }
 /* ba-section-info */
 .ba-section-info {
